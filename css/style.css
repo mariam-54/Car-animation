@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* main section */
+.main {
+      height: 100vh;
+      width: 100%;
+      background-image: url(../images/sky.webp);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow-x: hidden;
+}
+
+/* Common Styles */
+.road, .city{
+    width: 500%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+/* road */
+.road {
+      height: 200px;
+      bottom: 0;
+      background: url(../images/road.jpg) repeat-x;
+      animation: road 20s linear infinite alternate-reverse;
+}
+@keyframes road{
+	100%{
+		transform: translateX(-3400px);
+	}
+}
+
+/* city */
+.city{
+    height: 458px;
+    background: url(../images/city.png) repeat-x;
+    bottom: 200px;
+    animation: city 20s linear infinite;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+/* //////////car1/////////// */
+
+ .car1 {
+    width: 180px;
+    bottom: 150px;
+    left: 0;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+    animation: car1 2s infinite  linear  forwards;
+ }
+ .car1 img {
+    width: 100%;
+ }
+ @keyframes car1{
+	0%{transform: translateX(-4px) translateY(4px); left: 0; }
+    100%{transform: translateY(-1px) ; left: 1200px;}
+}
+.car1-wheel{
+	bottom: 200px;
+    left: 0;
+	transform: translateX(-50);
+	position: absolute;
+	z-index: 2;
+    animation: wheel1 2s infinite  linear  forwards;
+}
+
+
+.car1-wheel img {
+	width: 40px;
+	height: 40px;
+	
+}
+
+@keyframes wheel1{
+    0%{transform: rotate(360deg); left: 0; }
+    100%{transform: rotate(360deg); left: 1200px;}
+}
+.car1-back-wheel{
+	left: 12px;
+    top: 12px;
+	position: absolute;
+}
+.car1-front-wheel{
+	left: 120px;
+    top: 12px;
+	position: absolute;
+}
+
+/* //////////////car2//////////// */
+.car2 {
+    width: 180px;
+    bottom: 80px;
+    left: 25px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 4;
+    animation: car2 1.5s ease-in 2s infinite reverse backwards;
+ }
+ .car2 img {
+    width: 100%;
+   
+ }
+ @keyframes car2{
+	0%{transform: translateX(-4px) translateY(4px);  } 
+    100%{transform: translateY(-1px) ; left: 1200px;}
+}
+
+.car2-wheel{
+	bottom: 200px;
+    left: 25px;
+	transform: translateX(-50);
+	position: absolute;
+	z-index: 4;
+    animation: wheel2 1.5s ease-in 2s infinite reverse backwards;
+}
+
+.car2-wheel img {
+	width: 40px;
+	height: 40px;
+	
+}
+
+@keyframes wheel2{
+    0%{transform: rotate(360deg); }
+    100%{transform: rotate(360deg); left: 1200px;}
+}
+.car2-back-wheel{
+	left: 30px;
+    top: 35px;
+	position: absolute;
+}
+.car2-front-wheel{
+	left: 115px;
+    top: 35px;
+	position: absolute;
+}
+
+/* //////////car3/////////// */
+
+.car3 {
+    width: 180px;
+    bottom: 120px;
+    left: -540px;
+    transform: translateX(-50);
+    position: absolute;
+    z-index: 6;
+    animation: car3 2s ease-out 4s infinite  forwards;
+   
+ }
+ .car3 img {
+    width: 100%;
+ }
+ @keyframes car3{
+	0%{transform:  translateX(-2px) translateY(2px);  }
+    100%{transform: translateY(-1px); left: 1200px;}
+}
+.car3-wheel{
+	bottom: 150px;
+    left: -540px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 6;
+    animation: wheel3 2s ease-out 4s infinite  forwards;
+}
+
+.car3-wheel img {
+	width: 34px;
+	height: 34px;
+	
+}
+
+@keyframes wheel3{
+    0%{transform: rotate(360deg); }
+    100%{transform: rotate(360deg); left: 1200px;}
+}
+.car3-back-wheel{
+	left: 20px;
+	position: absolute;
+}
+.car3-front-wheel{
+	left: 127px;
+	position: absolute;
+}
+
+/* //////////////car4//////////// */
+.car4 {
+    width: 180px;
+    bottom: 80px;
+    left: 70px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 4;
+    animation: car4 1.5s linear 6s infinite reverse backwards;
+ }
+ .car4 img {
+    width: 100%;
+   
+ }
+ @keyframes car4{
+	0%{transform: translateX(-4px) translateY(4px);  } 
+    100%{transform: translateY(-1px) ; left: 1200px;}
+}
+
+.car4-wheel{
+	bottom: 200px;
+    left: 70px;
+	transform: translateX(-50);
+	position: absolute;
+	z-index: 4;
+    animation: wheel4 1.5s linear 6s infinite reverse backwards;
+}
+
+.car4-wheel img {
+	width: 40px;
+	height: 40px;
+	
+}
+
+@keyframes wheel4{
+    0%{transform: rotate(360deg); }
+    100%{transform: rotate(360deg); left: 1200px;}
+}
+.car4-back-wheel{
+	left: 30px;
+    top: 35px;
+	position: absolute;
+}
+.car4-front-wheel{
+	left: 115px;
+    top: 35px;
+	position: absolute;
+}
+
+/* //////////car5/////////// */
+.car5{
+	
+	width: 330px;
+	left: -300px;
+	bottom: 100px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 4;
+    animation: car5 2s linear 8s infinite forwards;
+}
+
+
+.car5 img {
+	
+   width: 100%;
+	
+}
+
+@keyframes car5{
+	0%{transform: translateX(-2px) translateY(2px);  }
+    100%{transform: translateY(-1px) ; left: 1300px;}
+}
+
+.car5-wheel{
+	
+	left: -300px;
+	bottom: 178px;
+	transform: translateX(-50);
+	position: absolute;
+	z-index: 4;
+    animation: wheel5 2s linear 8s infinite forwards;
+}
+
+.car5-wheel img {
+	width: 60px;
+	height: 60px;
+}
+
+@keyframes wheel5{
+    0%{transform: rotate(360deg);  }
+    100%{transform: rotate(360deg); left: 1300px;}
+}
+.car5-back-wheel{
+	left: 230px;
+	position: absolute;
+}
+.car5-front-wheel{
+	left: 30px;
+	position: absolute;
+}
+
+/* //////////////car6//////////// */
+.car6 {
+    width: 180px;
+    bottom: 80px;
+    left: 120px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 4;
+    animation: car6 1.5s linear 10s infinite reverse backwards;
+ }
+ .car6 img {
+    width: 100%;
+   
+ }
+ @keyframes car6{
+	0%{transform: translateX(-4px) translateY(4px);  } 
+    100%{transform: translateY(-1px) ; left: 1500px;}
+}
+
+.car6-wheel{
+	bottom: 200px;
+    left: 120px;
+	transform: translateX(-50);
+	position: absolute;
+	z-index: 4;
+    animation: wheel6 1.5s linear 10s infinite reverse backwards;
+}
+
+.car6-wheel img {
+	width: 40px;
+	height: 40px;
+	
+}
+
+@keyframes wheel6{
+    0%{transform: rotate(360deg); }
+    100%{transform: rotate(360deg); left: 1500px;}
+}
+.car6-back-wheel{
+	left: 30px;
+    top: 35px;
+	position: absolute;
+}
+.car6-front-wheel{
+	left: 115px;
+    top: 35px;
+	position: absolute;
+}
